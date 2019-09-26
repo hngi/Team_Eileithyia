@@ -1,0 +1,421 @@
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F6F6F6;
+}
+.navbar{
+    position: absolute;
+    width: 1440px;
+    height: 82px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.navbar-brand{
+    font-weight: bold;
+}
+.Dashboard{
+    position: absolute;
+    width: 388px;
+    height: 54px;
+    left: 579px;
+    top: 9px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+}
+.info{
+    position: absolute;
+    left: 85%;
+    top: 40%;
+    bottom: 94.53%;
+    background: #000000;
+}
+.drop3{
+    position: absolute;
+    left: 92%;
+    right: 2.85%;
+    top: 40%;
+    bottom: 95.41%;
+    background: #000000;
+}
+.profilebox{
+    position: absolute;
+    width: 257px;
+    height: 763px;
+    left: 0px;
+    top: 113px;
+    background: #11102F;
+    color: white;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17.0074px;
+    line-height: 26px;
+}
+.instructorsname{
+    position: absolute;
+    width: 143.62px;
+    height: 34.01px;
+    left: 19%;
+    white-space: nowrap;
+    top: 145px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.6765px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+.profilepicture{
+    position: absolute;
+    width: 125.67px;
+    height: 115.67px;
+    left: 57.64px;
+    top: 30.34px;
+    background: white url();
+    border-radius: 50%;
+}
+.line1{
+    position: absolute;
+    width: 257px;
+    height: 0px;
+    left: 0px;
+    top: 170px;
+    border: 0.944853px solid #ffffff;
+}
+.line2{
+    position: absolute;
+    width: 257px;
+    height: 0px;
+    left: 0px;
+    top: 175px;
+    border: 0.944853px solid #FFFFFF;
+}
+.line3{
+    position: absolute;
+    width: 257px;
+    height: 0px;
+    left: 0px;
+    top: 520px;
+    border: 0.944853px solid #FFFFFF;
+}
+.line4{
+    position: absolute;
+    width: 257px;
+    height: 0px;
+    left: 0px;
+    top: 525px;
+    border: 0.944853px solid #FFFFFF;
+}
+.dashboard{
+    position: absolute;
+    width: 97.32px;
+    height: 25.51px;
+    left: 81.19px;
+    top: 30%;
+    color: white;
+}
+.dashboardimg{
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    color: #FFFFFF;   
+}
+
+.editprofile{
+    position: absolute;
+    width: 90.71px;
+    height: 25.51px;
+    left: 81.19px;
+    top: 35%;
+    color: white;
+}
+.editprofileimg{
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    background: #FFFFFF;
+}
+.addclass{
+    position: absolute;
+    width: 102px;
+    height: 25px;
+    left: 81px;
+    top:40%;
+    color: white;
+}
+.addclassimg{
+    position: absolute;
+    left: 20%;
+    right: 95.41%;
+    top: 40%;
+    background: #FFFFFF;
+}
+.logout{
+    position: absolute;
+    width: 59.53px;
+    height: 25.51px;
+    left: 81.19px;
+    top: 45%;
+    color: white;
+}
+.logoutimg{
+    position: absolute;
+    left: 20%;
+    right: 95.91%;
+    top: 45%;
+    
+    background: #FFFFFF;
+}
+.notifications{
+    position: absolute;
+    width: 110.55px;
+    height: 25.51px;
+    left: 81.19px;
+    top: 50%;
+    color: white;
+}
+.notificationsimg{
+    position: absolute;
+    left: 20%;
+    right: 95.92%;
+    top: 50%;
+    background: #FFFFFF;
+}
+.calendar{
+    position: absolute;
+    width: 111.49px;
+    height: 25.51px;
+    left: 81.19px;
+    top: 55%;
+    color: white;
+}
+.calendarimg{
+    position: absolute;
+    left: 20%;
+    right: 95.8%;
+    top: 55%;
+    background: #FFFFFF;
+
+}
+.contact{
+    position: absolute;
+    width: 95.43px;
+    height: 25.51px;
+    left: 81.19px;
+    top: 60%;
+    color: white;
+}
+.contactimg{
+    position: absolute;
+    left: 20%;
+    right: 95.74%;
+    top: 60%;
+    background: #FFFFFF;
+}
+.dry{
+    position: absolute;
+    width: 959px;
+    height: 763px;
+    left: 323px;
+    top: 113px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.addclassbtn{
+    position: absolute;
+    width: 197.54px;
+    height: 43.19px;
+    left: 5%;
+    top: 5%;
+    color: white;
+    background: #11102F;
+    box-shadow: 0px 3.199px 7.99751px rgba(0, 0, 0, 0.25);
+}
+.deleteclassbtn{
+    position: absolute;
+    width: 197.54px;
+    height: 43.19px;
+    left: 30%;
+    top: 5%;
+    color: black;
+    background: #FFFFFF;
+    border: 0.799751px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 3.199px 7.99751px rgba(0, 0, 0, 0.25);
+}
+.hline{
+    position: absolute;
+    width: 959px;
+    height: 0px;
+    left: 0px;
+    top: 85px;
+    border: 1px solid #808080;
+
+
+}
+.coursename{
+    position: absolute;
+    width: 126px;
+    height: 27px;
+    left: 5%;
+    top: 15%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.drop{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 90%;
+    top: 22%;
+    background: #000000;
+}
+.coursenameplace{
+    position: absolute;
+    width: 875px;
+    height: 52px;
+    left: 5%;
+    top: 20%;
+    background: #FFFFFF;
+    border: 0.891553px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 3.56621px 8.91553px rgba(0, 0, 0, 0.25);
+}
+.classtitle{
+    position: absolute;
+    width: 94px;
+    height: 27px;
+    left: 5%;
+    top: 30%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+.classtitleplace{
+    position: absolute;
+    width: 875px;
+    height: 52px;
+    left: 5%;
+    top: 35%;
+    background: #FFFFFF;
+    border: 0.891553px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 3.56621px 8.91553px rgba(0, 0, 0, 0.25);
+}
+.term{
+    position: absolute;
+    width: 138px;
+    height: 27px;
+    left: 5%;
+    top: 45%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+.termplace{
+    position: absolute;
+    width: 875px;
+    height: 52px;
+    left:5%;
+    top: 50%;
+    background: #FFFFFF;
+    border: 0.891553px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 3.56621px 8.91553px rgba(0, 0, 0, 0.25);
+}
+.level{
+    position: absolute;
+    width: 160px;
+    height: 27px;
+    left: 5%;
+    top: 60%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+.levelplace{
+    position: absolute;
+    width: 875px;
+    height: 52px;
+    left: 5%;
+    top: 65%;
+    
+    background: #FFFFFF;
+    border: 0.891553px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 3.56621px 8.91553px rgba(0, 0, 0, 0.25);    
+}
+.drop2{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 90%;
+    top: 67%;
+    float: right;
+}
+.save{
+    position: absolute;
+    width: 120px;
+    height: 45px;
+    left: 5%;
+    top: 80%;
+    color: white;
+    font-family: Poppins;
+    font-weight: bold;
+    background: #11102F;
+    box-shadow: 0px 3.199px 7.99751px rgba(0, 0, 0, 0.25);
+    
+}
+.cancel{
+    position: absolute;
+    width: 120px;
+    height: 45px;
+    left: 20%;
+    top: 80%;
+    font-family: Poppins;
+    font-weight: bold;
+    background: #FFFFFF;
+    box-shadow: 0px 3.199px 7.99751px rgba(0, 0, 0, 0.25);
+}
+.navbarbottom{
+    position: absolute;
+    width: 1440px;
+    height: 53px;
+    bottom: 0px;
+    background: #FFFFFF;
+}
+.footer {
+    position: absolute;
+    width: 461px;
+    height: 27px;
+    left: 490px;
+    top: 987px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #808080;
+}
+
