@@ -36,6 +36,14 @@ body{
     bottom: 94.53%;
     background: #000000;
 }
+.topprofile{
+    position: absolute;
+    left: 89%;
+    top: 40%;
+}
+.avatar-sm{
+    border-radius: 50%;
+}
 .drop3{
     position: absolute;
     left: 92%;
@@ -44,13 +52,44 @@ body{
     bottom: 95.41%;
     background: #000000;
 }
+.dropbtn3 {
+    background-color: #ffffff;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} 
+.dropdown-content3 a:hover {background-color: #f1f1f1
+}
+.drop3:hover .dropdown-content3 {
+    display: block;
+}
+.drop3:hover .dropbtn3 {
+    background-color: #006494;
+}
 .profilebox{
     position: absolute;
     width: 257px;
     height: 763px;
     left: 0px;
     top: 113px;
-    background: #11102F;
+    background: #006494;
     color: white;
     font-family: Poppins;
     font-style: normal;
@@ -64,13 +103,18 @@ body{
     height: 34.01px;
     left: 19%;
     white-space: nowrap;
-    top: 145px;
+    top: 150px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 22.6765px;
     line-height: 34px;
     color: #FFFFFF;
+}
+.icon{
+    position: absolute;
+    top: 155px;
+    left: 20px;
 }
 .profilepicture{
     position: absolute;
@@ -81,12 +125,16 @@ body{
     background: white url();
     border-radius: 50%;
 }
+.avatar-lg {
+    border-radius: 50%;
+    margin: -4% 0%;
+}
 .line1{
     position: absolute;
     width: 257px;
     height: 0px;
     left: 0px;
-    top: 170px;
+    top: 180px;
     border: 0.944853px solid #ffffff;
 }
 .line2{
@@ -94,7 +142,7 @@ body{
     width: 257px;
     height: 0px;
     left: 0px;
-    top: 175px;
+    top: 185px;
     border: 0.944853px solid #FFFFFF;
 }
 .line3{
@@ -118,14 +166,14 @@ body{
     width: 97.32px;
     height: 25.51px;
     left: 81.19px;
-    top: 30%;
+    top: 35%;
     color: white;
 }
 .dashboardimg{
     position: absolute;
     left: 20%;
-    top: 30%;
-    color: #FFFFFF;   
+    top: 35%;
+    color: #006494;   
 }
 
 .editprofile{
@@ -133,91 +181,58 @@ body{
     width: 90.71px;
     height: 25.51px;
     left: 81.19px;
-    top: 35%;
+    top: 40%;
     color: white;
 }
 .editprofileimg{
     position: absolute;
     left: 20%;
-    top: 35%;
-    background: #FFFFFF;
+    top: 40%;
+    background: #006494;
 }
 .addclass{
     position: absolute;
     width: 102px;
     height: 25px;
-    left: 81px;
-    top:40%;
+    left: 81.19px;
+    top:45%;
     color: white;
 }
 .addclassimg{
     position: absolute;
     left: 20%;
-    right: 95.41%;
-    top: 40%;
-    background: #FFFFFF;
+    top: 45%;
+    background: #006494;
 }
 .logout{
     position: absolute;
     width: 59.53px;
     height: 25.51px;
     left: 81.19px;
-    top: 45%;
+    top: 50%;
     color: white;
 }
 .logoutimg{
     position: absolute;
-    left: 20%;
-    right: 95.91%;
-    top: 45%;
+    left: 22%;
+    top: 50%;
     
-    background: #FFFFFF;
+    background: #006494;
 }
 .notifications{
     position: absolute;
     width: 110.55px;
     height: 25.51px;
     left: 81.19px;
-    top: 50%;
+    top: 55%;
     color: white;
 }
 .notificationsimg{
     position: absolute;
     left: 20%;
     right: 95.92%;
-    top: 50%;
-    background: #FFFFFF;
-}
-.calendar{
-    position: absolute;
-    width: 111.49px;
-    height: 25.51px;
-    left: 81.19px;
     top: 55%;
-    color: white;
-}
-.calendarimg{
-    position: absolute;
-    left: 20%;
-    right: 95.8%;
-    top: 55%;
-    background: #FFFFFF;
-
-}
-.contact{
-    position: absolute;
-    width: 95.43px;
-    height: 25.51px;
-    left: 81.19px;
-    top: 60%;
-    color: white;
-}
-.contactimg{
-    position: absolute;
-    left: 20%;
-    right: 95.74%;
-    top: 60%;
-    background: #FFFFFF;
+    background: #006494;
 }
 .dry{
     position: absolute;
@@ -230,28 +245,6 @@ body{
     box-sizing: border-box;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
-.addclassbtn{
-    position: absolute;
-    width: 197.54px;
-    height: 43.19px;
-    left: 5%;
-    top: 5%;
-    color: white;
-    background: #11102F;
-    box-shadow: 0px 3.199px 7.99751px rgba(0, 0, 0, 0.25);
-}
-.deleteclassbtn{
-    position: absolute;
-    width: 197.54px;
-    height: 43.19px;
-    left: 30%;
-    top: 5%;
-    color: black;
-    background: #FFFFFF;
-    border: 0.799751px solid #E5E5E5;
-    box-sizing: border-box;
-    box-shadow: 0px 3.199px 7.99751px rgba(0, 0, 0, 0.25);
-}
 .hline{
     position: absolute;
     width: 959px;
@@ -259,15 +252,13 @@ body{
     left: 0px;
     top: 85px;
     border: 1px solid #808080;
-
-
 }
 .coursename{
     position: absolute;
     width: 126px;
     height: 27px;
     left: 5%;
-    top: 15%;
+    top: 20%;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
@@ -279,15 +270,48 @@ body{
     width: 5px;
     height: 5px;
     left: 90%;
-    top: 22%;
+    top: 27%;
     background: #000000;
+}
+.dropbtn {
+    background-color: #ffffff;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #f1f1f1}
+  
+.drop:hover .dropdown-content {
+    display: block;
+}
+  
+.drop:hover .dropbtn {
+    background-color: #006494;
 }
 .coursenameplace{
     position: absolute;
     width: 875px;
     height: 52px;
     left: 5%;
-    top: 20%;
+    top: 25%;
     background: #FFFFFF;
     border: 0.891553px solid #E5E5E5;
     box-sizing: border-box;
@@ -298,7 +322,7 @@ body{
     width: 94px;
     height: 27px;
     left: 5%;
-    top: 30%;
+    top: 40%;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
@@ -311,36 +335,13 @@ body{
     width: 875px;
     height: 52px;
     left: 5%;
-    top: 35%;
-    background: #FFFFFF;
-    border: 0.891553px solid #E5E5E5;
-    box-sizing: border-box;
-    box-shadow: 0px 3.56621px 8.91553px rgba(0, 0, 0, 0.25);
-}
-.term{
-    position: absolute;
-    width: 138px;
-    height: 27px;
-    left: 5%;
     top: 45%;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-    color: #000000;
-}
-.termplace{
-    position: absolute;
-    width: 875px;
-    height: 52px;
-    left:5%;
-    top: 50%;
     background: #FFFFFF;
     border: 0.891553px solid #E5E5E5;
     box-sizing: border-box;
     box-shadow: 0px 3.56621px 8.91553px rgba(0, 0, 0, 0.25);
 }
+
 .level{
     position: absolute;
     width: 160px;
@@ -374,7 +375,38 @@ body{
     top: 67%;
     float: right;
 }
-.save{
+.dropbtn2 {
+    background-color: #ffffff;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} 
+.dropdown-content2 a:hover {background-color: #f1f1f1
+}
+.drop2:hover .dropdown-content2 {
+    display: block;
+}
+.drop2:hover .dropbtn2 {
+    background-color: #006494;
+}
+.addclassbtn{
     position: absolute;
     width: 120px;
     height: 45px;
@@ -383,9 +415,9 @@ body{
     color: white;
     font-family: Poppins;
     font-weight: bold;
-    background: #11102F;
+    background: #006494;
     box-shadow: 0px 3.199px 7.99751px rgba(0, 0, 0, 0.25);
-    
+ 
 }
 .cancel{
     position: absolute;
