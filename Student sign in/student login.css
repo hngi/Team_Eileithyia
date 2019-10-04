@@ -1,0 +1,175 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Poppins; 
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    background: #006494;;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    margin: auto;
+}
+
+.container-top {
+    position: absolute;
+    width: 1600px;
+    height: 60px;
+    left: 0%;
+    top: 0%;
+    margin: auto;
+    background-color: white;
+    overflow: hidden;
+}
+
+nav ul {
+	margin-top: -50px;
+	margin-left: 550px;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	font-size: 18px;
+	font-weight: 5;
+	border-radius: 5px;
+	margin-left: 0px;
+	line-height: 07px;
+	padding: 20px 50px 0 0; 
+}
+
+nav ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+h2 {
+    font-size: 20px;
+    margin-left: 25px;
+    color: black;
+}
+
+h3 {
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 35%;
+    
+}
+
+.login-form {
+    margin-top: 30px;
+    text-align: center;
+} 
+
+#fname {
+    padding: 5px 20px 5px 5px;
+    margin: 10px 0;
+    width: 500px;
+    height: 23px;
+	border-radius: 3px;
+	border: none;
+    color: #111;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lname {
+    padding: 5px 20px 5px 5px;
+    margin: 10px 0;
+    width: 500px;
+    height: 23px;
+	border-radius: 3px;
+	border: none;
+	color: #111;
+}
+#email {
+    padding: 5px 20px 5px 5px;
+    margin: 10px 0;
+    width: 500px;
+    height: 30px;
+	border-radius: 3px;
+	border: none;
+	color: #111;
+}
+
+#pword {
+    padding: 5px 20px 5px 5px;
+    margin: 10px 0;
+    width: 500px;
+    height: 30px;
+	border-radius: 3px;
+	border: none;
+	color: #111;
+}
+.submit {
+    padding: 5px 20px 5px 5px;
+    margin: 10px 0;
+    width: 530px;
+    height: 35px;
+	border-radius: 3px;
+	border: none;
+    background-color: rgb(1, 1, 19);
+    color: white;
+    font-size: 18px;
+    
+    
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, rgb(8, 100, 192) 0%, rgb(22, 241, 120) 100%);;
+    color: black;
+}
+.sign {
+    color: white;
+
+}
+.sign:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+#fbLogo {
+    float: right;
+    padding: 6px;
+    font-size:30px;
+    width: 30px;
+    border-radius: 50%;
+    background: blue;
+    color: white;
+    text-align: center;
+    margin: 8px;
+
+}
+#twtLogo {
+    float: right;
+    padding: 6px;
+    font-size:30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #3f89ce;
+    color: white;
+    text-align: center;
+    margin: 8px;
+}
+#copyright {
+    color: white;
+    padding-left: 5%;
+}
+#forgot{
+    padding-top: 5px;
+    padding-right: 27% ;
+    font-size: 15px;
+    color: white;
+    line-height: 1.7;
+}
+
+#box{
+    padding-top: 5px;
+    padding-left: 10% ;
+    padding-right: 38%;
+    font-size: 15px;
+    color: white;
+    line-height: 1.5;
+}

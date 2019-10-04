@@ -1,0 +1,138 @@
+body {
+    background-color: rgb(255, 251, 251);
+    color: black !important;
+    font-family: Poppins; 
+}
+
+.intro {
+    height: 100% !important;
+    width: 100% !important;
+    background: white !important;
+    box-shadow: 0px 4px 100px rgba(44, 32, 32, 0.25) !important;
+    overflow: hidden !important;
+    margin: auto !important;
+}
+
+.container-top {
+    position: absolute !important ;
+    width: 1600px !important;
+    height: 60px !important;
+    left: 0% !important;
+    top: 0% !important;
+    margin: auto !important;
+    background-color: white;
+    box-sizing: border-box !important;
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 214, .20);
+    overflow: hidden !important ;
+}
+
+nav ul {
+	margin-top: -50px !important;
+	margin-left: 550px !important;
+}
+
+nav ul li {
+	display: inline-block !important;
+	list-style: none !important;
+	font-size: 18px !important;
+	font-weight: 5 !important;
+	border-radius: 5px !important;
+	margin-left: 0px !important;
+	line-height: 07px !important;
+	padding: 20px 50px 0 0 !important; 
+}
+
+nav ul li a {
+	color: black !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+h1{
+    text-align: center;
+    margin: 50px 0 !important;
+    font-family: sans-serif;
+    padding-top: 4%;
+    font-weight: bold !important ;
+}
+
+h2 {
+    font-size: 20px;
+    margin-left: 25px;
+    color: black
+}
+
+h3 {
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 35%;
+    color: #111;
+    padding-top: 3%;
+    
+}
+#copyright {
+    color: black ;
+    padding-left: 40%;
+    font-size: 20px;
+}
+.footer {
+    border-top: 2px solid white;
+    color: black !important;
+}
+.card,.card-header{
+    background-color: transparent!important;
+    border: none;
+    padding: 0 !important;
+    margin-bottom: 20px;
+}
+.card{
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 208, .18);
+}
+.btn-link{
+    width: 100%;
+    height: 80px;
+    color: white !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: Poppins, sans-serif !important;
+    background-color: #006494!important;
+    
+}
+
+.card-body{
+    background: #eee;
+    font-size: 19px !important;
+
+}
+
+.btn-link:after{
+    content: '\2212';
+    width: 35px;
+    font-size: 25px;
+    text-align: center;
+    border-radius:5px;
+    right: 15px;
+    top: 11px;
+    color: #111;
+    position: absolute;
+    background: #eee;
+}
+.btn-link.collapsed:after{
+    content: '\002B';
+}
+
+.btn-link:before{
+    content: '';
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    background:white;
+    z-index: 1;
+    transform: rotate(45deg);
+    left: 30px;
+    top: 70px;
+
+}
