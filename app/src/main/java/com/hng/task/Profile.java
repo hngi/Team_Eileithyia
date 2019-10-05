@@ -16,6 +16,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.common.util.UidVerifier;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -59,6 +60,7 @@ public class Profile extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseDatabase mFirebaseDatabase;
     private DatabaseReference user;
+    private DataSnapshot ratingRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +80,7 @@ public class Profile extends AppCompatActivity {
         profileImage = findViewById(R.id.profilePicture);
         logout = findViewById(R.id.logout);
         feedback = findViewById(R.id.feedback);
-        RatingBar ratingBar = (RatingBar) findViewById(R.id.ratingBar);
+        final RatingBar ratingBar = (RatingBar) findViewById(R.id.ratingBar);
         tvRateCount = (TextView) findViewById(R.id.tvRateCount);
         tvRateMessage = (TextView) findViewById(R.id.tvRateMessage);
 
@@ -106,8 +108,8 @@ public class Profile extends AppCompatActivity {
 
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
-            public void onRatingChanged(RatingBar ratingBar, float rating,
-                                        boolean fromUser) {
+            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+
                 ratedValue = ratingBar.getRating();
                 tvRateCount.setText("Your Rating :"
                         + ratedValue + "/5.");
@@ -127,6 +129,7 @@ public class Profile extends AppCompatActivity {
                 }
             }
         });
+
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
