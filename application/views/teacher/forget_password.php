@@ -6,34 +6,21 @@
     <div class="container-fluid">
         <div class="row">
 
-            <div class="offset-3 col-lg-5 col-md-5 col-sm-6 col-xs-5 instructor-signupForm" style="margin-top: 8%; margin-bottom: 9%;">
-                <h2 class="text-center text-light" style="margin-bottom: 2%;">Teacher's Login</h2>
-
+            <div class="offset-3 col-lg-5 col-md-5 col-sm-6 col-xs-5 instructor-signupForm" style="margin-top: 13%; margin-bottom: 9%;">
+                <h2 class="text-center text-light" style="margin-bottom: 3%;">Teacher Forget Password</h2>
+                
                 <?= $status ?>
                 <?= form_open() ?>
+                
                     <div class="form-group">
                         <input type="email" name="txtEmail" placeholder="Email address" class="form-control" required="">
                     </div>
 
-                    <div class="form-group">
-                        <input type="password" name="txtPassword" placeholder="Password" class="form-control" required="">
-                    </div>
-
 
                     <div class="form-group">
-                        <button type="submit" name="" class="btn btn-dark form-control"> Login </button>
+                        <button type="submit" name="" class="btn btn-dark form-control"> Recover Password </button>
                     </div>
 
-                    <div class="form-group text-light pull-right">
-                        <a href="<?= base_url()?>teacher/forget_password" style="color: #fff;"><span style="font-size: 1.2em">Forget Password</span></a>
-                    </div>
-                    <div class="form-group text-light">
-                        <input type="checkbox" name=""> &nbsp <span style="font-size: 1.2em">Remember me</span>
-                    </div>
-
-                    <div class="form-group text-center text-light">
-                        <span style="font-size: 1.2em">Need an account? <span> <a href="<?= base_url() ?>teacher/signup" style="color: #fff;">Signup Here</a>
-                    </div>
                 <?= form_close()?>
 
             </div>

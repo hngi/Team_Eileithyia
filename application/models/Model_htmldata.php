@@ -43,12 +43,11 @@ class Model_htmlData extends CI_Model {
         $this->email->message($message);
         $this->email->send();
     }
-    
-    
-    function senderMailAttachPDF($email, $message, $subject, $name="", $title="", $path) {
-        if($title === ""){
+
+    function senderMailAttachPDF($email, $message, $subject, $name = "", $title = "", $path) {
+        if ($title === "") {
             $title = $subject;
-        }else{
+        } else {
             $title = $title;
         }
         $email_msg = $this->message_body($title, $name, $message);
@@ -61,21 +60,54 @@ class Model_htmlData extends CI_Model {
         $this->email->send();
     }
 
-    function senderMail($email, $message, $subject, $name="", $title="") {
-        if($title === ""){
+    function senderMail($email, $message, $subject, $name = "", $title = "") {
+        if ($title === "") {
             $title = $subject;
-        }else{
+        } else {
             $title = $title;
         }
         $email_msg = $this->message_body($title, $name, $message);
         $this->load->library("email", array('mailtype' => 'html'));
-        $this->email->from('exceptionalng@gmail.com', 'Music Hub');
+        $this->email->from('codedgift@gmail.com', 'Eileithyia Mini-Classroom');
         $this->email->to($email);
         $this->email->subject($subject);
         $this->email->message($email_msg);
         $this->email->send();
     }
-    
+
+    function senderMailRequest($email, $message, $subject, $name = "", $title = "") {
+        if ($title === "") {
+            $title = $subject;
+        } else {
+            $title = $title;
+        }
+        $email_msg = $this->message_body2($title, $name, $message);
+        $this->load->library("email", array('mailtype' => 'html'));
+        $this->email->from('support@tokunbocars.ng', 'TokunboCars.NG');
+        $this->email->to($email);
+        $this->email->subject($subject);
+        $this->email->message($email_msg);
+        $this->email->send();
+    }
+
+    function CronJobsendMail($email, $message, $subject, $name = "", $title = "") {
+
+        if ($title === "") {
+            $title = $subject;
+        } else {
+            $title = $title;
+        }
+        $email_msg = $this->message_body($title, $name, $message);
+        $this->load->library("email", array('mailtype' => 'html'));
+        $this->email->from('support@tokunbocars.ng', 'TokunboCars.NG');
+        $this->email->to($email);
+        $this->email->subject($subject);
+        $this->email->message($email_msg);
+        $this->email->send();
+
+        $this->email->clear();
+    }
+
     function senderMail2($email, $message, $subject) {
         $email_msg = $this->message_body($title, $name, $message);
         $this->load->library("email", array('mailtype' => 'html'));
@@ -85,27 +117,47 @@ class Model_htmlData extends CI_Model {
         $this->email->message($email_msg);
         $this->email->send();
     }
-    
-    
+
     function message_body($title, $name, $msg) {
         $bdy = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>'.$title.'</title>
-  </head>
-  <body>
-  <div style="margin: 20px auto 20px auto; width: 90%">
-  <img src="https://tokunbocars.ng/images/tokunbo-cars-logo2.jpg" style="width: 250px">
-  <h3>Hello, '.$name.'</h3>
-  <p>'.$msg.'</p>
-      <p> </p>
-      <p><a href="https://tokunbocars.ng">visit our website</a> | <a href="https://tokunbocars.ng/users/login">log in to your account</a> | <a href="https://tokunbocars.ng/request">request a car</a><br/> 
-Copyright © CarsNowNow Services Limited (RC: 1354982), All rights reserved.</p>
-      </div>
-    </body>
-</html>
-';
+            <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+              <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <title>' . $title . '</title>
+              </head>
+              <body>
+              <div style="margin: 20px auto 20px auto; width: 90%">
+              <img src="https://tokunbocars.ng/images/tokunbo-cars-logo2.jpg" style="width: 250px">
+              <h3>Hello, ' . $name . '</h3>
+              <p>' . $msg . '</p>
+                  <p> </p>
+                  <p><a href="http://trccgpsf.org/mini_classroom">visit our website</a> | <a href="http://trccgpsf.org/mini_classroom/student/signin">Login As a Student</a> | <a href="http://trccgpsf.org/mini_classroom/teacher/signin">Login As Teacher</a><br/> 
+            Copyright © Eileithyia Mini Classroom, All rights reserved.</p>
+                  </div>
+                </body>
+            </html>
+            ';
+        return $bdy;
+    }
+    function message_body2($title, $name, $msg) {
+        $bdy = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+            <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+              <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <title>' . $title . '</title>
+              </head>
+              <body>
+              <div style="margin: 20px auto 20px auto; width: 90%">
+              <img src="https://tokunbocars.ng/images/tokunbo-cars-logo2.jpg" style="width: 250px">
+              
+              <p>' . $msg . '</p>
+                  <p> </p>
+                  <p><a href="https://tokunbocars.ng">visit our website</a> | <a href="https://tokunbocars.ng/users/login">log in to your account</a> | <a href="https://tokunbocars.ng/request">request a car</a><br/> 
+            Copyright © CarsNowNow Services Limited (RC: 1354982), All rights reserved.</p>
+                  </div>
+                </body>
+            </html>
+            ';
         return $bdy;
     }
 

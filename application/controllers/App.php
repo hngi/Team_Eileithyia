@@ -56,6 +56,62 @@ class App extends CI_Controller {
     }
 //------------------------------------------------------------------------------
     
+    
+//------------------------------------------------------------------------------
+    public function faq() {
+        $this->load->view("faq");
+    }
+//------------------------------------------------------------------------------
+    
+    
+//------------------------------------------------------------------------------
+    public function contact() {
+        $data["status"] = "";
+
+        $this->form_validation->set_rules('txtFname', 'FullName', 'required|trim');
+        $this->form_validation->set_rules('txtEmail', 'Email', 'required|trim');
+        $this->form_validation->set_rules('txtMsg', 'Message', 'required|trim');
+
+        if ($this->form_validation->run()) {
+        
+            //-- End of SMS API --------------
+
+//            $message = '<p>Contact Details From a User of Eileithyia Mini Classroom.</p>';
+//            $message .= '<p><b>Contact Details</b></p>';
+//            $message .= '<p>Fullname: '.$this->input->post('txtFname').'</p>';
+//            $message .= '<p>Fullname: '.$this->input->post('txtEmail').'</p>';
+//            $message .= '<p>Fullname: '.$this->input->post('txtMsg').'</p>';
+//            $this->model_htmldata->senderMail("bimibarbie@yahoo.com", $message, "Eileithyia Mini Classroom", $this->input->post("txtFname"), "Contact Message");
+//
+            $email_to = $this->input->post('txtEmail');
+                    
+            $subject = "Contact Us message to Eileithyia Mini-Classroom";
+            
+            $name = $this->input->post('txtFname');;
+            
+            $title = "Contact Us message to Eileithyia Mini-Classroom";
+            
+            $message = "<p>Thanks for contact us, team Eiliethyia Mini-Classroom will contact you soon.</p>";
+            $message .= "<p></p>";
+            $message .= "<p>we will be glad to have you explore our site.</p>";
+            
+            //Send password to user email
+            $this->model_htmldata->senderMail($email_to, $message, $subject, $name, $title);
+            $data["status"] = $this->model_htmldata->successMsg2("Thanks for contacting us, we will get back to you soon");
+               
+        }
+        
+        $this->load->view("contact", $data);
+    }
+//------------------------------------------------------------------------------
+    
+    
+//------------------------------------------------------------------------------
+    public function terms() {
+        $this->load->view("terms");
+    }
+//------------------------------------------------------------------------------
+    
 //------------------------------------------------------------------------------
     public function teacher_signup(){
         $data["title"] = "Teacher Signup | Thyia E-Learning Classroom";
@@ -551,6 +607,116 @@ class App extends CI_Controller {
         
         $this->load->view('layout/header_auth', $data);
         $this->load->view('student/signin', $data);
+    }
+//------------------------------------------------------------------------------
+    
+    
+    private function genPassword() {
+        $verify = 'hng6-';
+        for ($i = 0; $i < 4; $i++) {
+            $verify .= mt_rand(0, 3);
+        }
+        return $verify;
+    }
+    
+//------------------------------------------------------------------------------
+    public function student_forget_password(){
+        $data["title"] = "Forget Password | Thyia E-Learning Classroom";
+        $data["status"] = "";
+        
+        $this->form_validation->set_rules('txtEmail', 'Email', 'required|trim');
+        
+        if ($this->form_validation->run() == TRUE) {
+
+            $check_email = $this->model_getvalues->getDetails("student", "email", $this->input->post('txtEmail'));
+            
+            if($check_email){
+                
+                $new_password = $this->genPassword();
+                
+                $array = array("password" => md5($new_password));
+                
+                if($this->model_updatevalues->updateVal('student', $array, "email", $this->input->post('txtEmail'))){
+                    
+                    $email_to = $this->input->post('txtEmail');
+                    
+                    $subject = "New Password Update";
+                    
+                    $name = $check_email["fullname"];
+                    
+                    $title = "New Password From Eileithyia Mini-Classroom";
+                    
+                    $message = "<p>Below is new password details</p>";
+                    $message .= "<p><b>New Password: ".$new_password."</b></p>";
+                    $message .= "<p></p>";
+                    $message .= "<p>Note that you can always change your password when you login into your dashboard on Edit Profile Page.</p>";
+                    
+                    //Send password to user email
+                    $this->model_htmldata->senderMail($email_to, $message, $subject, $name, $title);
+                    $data["status"] = $this->model_htmldata->successMsg2("Kindly check your mail or spam box for your new password");
+                    
+                    
+                }
+                
+            }else{
+                $data["status"] = $this->model_htmldata->errorMsg2("Oooops!, This Email Does not have an account with us!");
+            }
+            
+        } 
+        
+        $this->load->view('layout/header_forget', $data);
+        $this->load->view('student/forget_password', $data);
+    }
+//------------------------------------------------------------------------------
+    
+    
+//------------------------------------------------------------------------------
+    public function teacher_forget_password(){
+        $data["title"] = "Forget Password | Thyia E-Learning Classroom";
+        $data["status"] = "";
+        
+        $this->form_validation->set_rules('txtEmail', 'Email', 'required|trim');
+        
+        if ($this->form_validation->run() == TRUE) {
+
+            $check_email = $this->model_getvalues->getDetails("teachers", "email", $this->input->post('txtEmail'));
+            
+            if($check_email){
+                
+                $new_password = $this->genPassword();
+                
+                $array = array("password" => md5($new_password));
+                
+                if($this->model_updatevalues->updateVal('teachers', $array, "email", $this->input->post('txtEmail'))){
+                    
+                    $email_to = $this->input->post('txtEmail');
+                    
+                    $subject = "New Password Update";
+                    
+                    $name = $check_email["fullname"];
+                    
+                    $title = "New Password From Eileithyia Mini-Classroom";
+                    
+                    $message = "<p>Below is new password details</p>";
+                    $message .= "<p><b>New Password: ".$new_password."</b></p>";
+                    $message .= "<p></p>";
+                    $message .= "<p>Note that you can always change your password when you login into your dashboard on Edit Profile Page.</p>";
+                    
+                    //Send password to user email
+                    $this->model_htmldata->senderMail($email_to, $message, $subject, $name, $title);
+                    $data["status"] = $this->model_htmldata->successMsg2("Kindly check your mail or spam box for your new password");
+                    
+                    
+                }
+                
+            }else{
+                $data["status"] = $this->model_htmldata->errorMsg2("Oooops!, This Email Does not have an account with us!");
+            }
+            
+        } 
+        
+        $this->load->view('layout/header_forget', $data);
+        $this->load->view('teacher/forget_password', $data);
     }
 //------------------------------------------------------------------------------
     

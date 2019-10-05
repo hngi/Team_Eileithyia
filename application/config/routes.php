@@ -62,6 +62,7 @@ $route['items/(:any)'] = 'app/all_items/$1';
 $route['all_student'] = 'app/all_student';
 $route['teacher/edit_profile'] = 'app/teacher_edit_profile';
 $route['teacher_change_password'] = 'app/teacher_change_password';
+$route['teacher/forget_password'] = 'app/teacher_forget_password';
 
 $route['student/signup'] = 'app/student_signup';
 $route['student/signin'] = 'app/student_signin';
@@ -70,10 +71,14 @@ $route['student_logout'] = 'app/student_logout';
 $route['item_details/(:any)/(:num)'] = 'app/item_details/$1/$2';
 $route['student/edit_profile'] = 'app/student_edit_profile';
 $route['student_change_password'] = 'app/student_change_password';
+$route['student/forget_password'] = 'app/student_forget_password';
 
 $route['edit_class/(:any)'] = 'app/edit_class/$1';
 $route['download_file/(:any)'] = 'app/download/$1';
 $route['about_us'] = 'app/about';
+$route['faq'] = 'app/faq';
+$route['terms'] = 'app/terms';
+$route['contact'] = 'app/contact';
 
 //Routes for admin
 

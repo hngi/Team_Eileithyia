@@ -24,6 +24,9 @@
                         <button type="submit" name="" class="btn btn-dark form-control"> Login </button>
                     </div>
 
+                    <div class="form-group text-light pull-right">
+                        <a href="<?= base_url() ?>student/forget_password" style="color: #fff;"><span style="font-size: 1.2em">Forget Password</span><a>
+                    </div>
                     <div class="form-group text-light">
                         <input type="checkbox" name=""> &nbsp <span style="font-size: 1.2em">Remember me</span>
                     </div>

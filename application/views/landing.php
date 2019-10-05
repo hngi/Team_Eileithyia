@@ -21,6 +21,7 @@
                     exercises to test yourself.
                 </p>
                 <a href="<?= base_url() ?>about_us"><button>Learn More</button></a>
+                <a href="<?= base_url() ?>contact"><button>Contact Us</button></a>
 
             </div>
 

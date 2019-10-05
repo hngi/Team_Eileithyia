@@ -67,6 +67,7 @@
 
 	border-top: 2px solid white;
 	color: white;
+        margin-top: 5%;
 }
 
 .footer i{
@@ -77,6 +78,7 @@
 
 section {
         background: #006494;
+        height: 630px;
 
 /*      background:  linear-gradient(blue,purple);
 	   Fallback for browsers that don't support gradients 

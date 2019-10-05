@@ -213,6 +213,9 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarText">
                                 <ul class="navbar-nav ml-auto">
+                                     <li class="nav-item active">
+                                      <a class="nav-link" href="<?= base_url() ?>about_us" style="color: black; font-weight: bold;">About Us<span class="sr-only">(current)</span></a>
+                                  </li>
                                     <li class="nav-item active">
                                         <a class="nav-link" href="<?= base_url() ?>student/signup" style="color: black; font-weight: bold;">Student Enroll<span class="sr-only">(current)</span></a>
                                     </li>
@@ -226,7 +229,12 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="<?= base_url() ?>student/signin" style="color: black; font-weight: bold;">Login as Student</a>
                                     </li>
-
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="<?= base_url() ?>faq" style="color: black; font-weight: bold;">FAQ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="<?= base_url() ?>terms" style="color: black; font-weight: bold;">Terms & Condition</a>
+                                    </li>
                                 </ul>
 
                             </div>
