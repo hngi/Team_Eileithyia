@@ -1,42 +1,50 @@
 {
   "project_info": {
-    "project_number": "614066266907",
-    "firebase_url": "https://travelmantics-7fad4.firebaseio.com",
-    "project_id": "travelmantics-7fad4",
-    "storage_bucket": "travelmantics-7fad4.appspot.com"
+    "project_number": "741761821430",
+    "firebase_url": "https://thia-bot.firebaseio.com",
+    "project_id": "thia-bot",
+    "storage_bucket": "thia-bot.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:614066266907:android:47405f5563f75ce1",
+        "mobilesdk_app_id": "1:741761821430:android:64ed32cb80424664375ad7",
         "android_client_info": {
-          "package_name": "com.example.pctravelmantics"
+          "package_name": "com.hng.task"
         }
       },
       "oauth_client": [
         {
-          "client_id": "614066266907-9eut4jj7b8183mdjf8tcqct9ln0gqm10.apps.googleusercontent.com",
+          "client_id": "741761821430-iql96p893moeuc3vnn2lngocflp6gfui.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.pctravelmantics",
-            "certificate_hash": "f87075f792fc4666a4f5839d5e1d6bde96acdf65"
+            "package_name": "com.hng.task",
+            "certificate_hash": "d6395b7a920918084378f511e9faf8c64096ffa2"
           }
         },
         {
-          "client_id": "614066266907-uivd9tqd0mbseesmtfumb6gngv9b3d3o.apps.googleusercontent.com",
+          "client_id": "741761821430-d5quosekuqtvtjeqi0b7lv7drnc5tn8v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hng.task",
+            "certificate_hash": "4b714b59f111c960eab874d0d53b6d89d7083834"
+          }
+        },
+        {
+          "client_id": "741761821430-a624gloltsr6rer3u6sh86bce2o8p24l.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA4uYpYxCaptIa71vm_GX7xh4nrSR7ePzs"
+          "current_key": "AIzaSyD7h4KH9SUOEAk5rHJ1bgKre3GfWZcXPEc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "614066266907-uivd9tqd0mbseesmtfumb6gngv9b3d3o.apps.googleusercontent.com",
+              "client_id": "741761821430-a624gloltsr6rer3u6sh86bce2o8p24l.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
