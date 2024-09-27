@@ -1,0 +1,453 @@
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F6F6F6;
+}
+.navbar{
+    position: absolute;
+    width: 1440px;
+    height: 82px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.navbar-brand{
+    font-weight: bold;
+}
+.Dashboard{
+    position: absolute;
+    width: 388px;
+    height: 54px;
+    left: 579px;
+    top: 9px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+}
+.info{
+    position: absolute;
+    left: 85%;
+    top: 40%;
+    bottom: 94.53%;
+    background: #000000;
+}
+.topprofile{
+    position: absolute;
+    left: 89%;
+    top: 40%;
+}
+.avatar-sm{
+    border-radius: 50%;
+}
+.drop3{
+    position: absolute;
+    left: 92%;
+    right: 2.85%;
+    top: 40%;
+    bottom: 95.41%;
+    background: #000000;
+}
+.dropbtn3 {
+    background-color: #ffffff;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} 
+.dropdown-content3 a:hover {background-color: #f1f1f1
+}
+.drop3:hover .dropdown-content3 {
+    display: block;
+}
+.drop3:hover .dropbtn3 {
+    background-color: #006494;
+}
+.profilebox{
+    position: absolute;
+    width: 257px;
+    height: 763px;
+    left: 0px;
+    top: 113px;
+    background: #006494;
+    color: white;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17.0074px;
+    line-height: 26px;
+}
+.instructorsname{
+    position: absolute;
+    width: 143.62px;
+    height: 34.01px;
+    left: 19%;
+    white-space: nowrap;
+    top: 150px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.6765px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+.icon{
+    position: absolute;
+    top: 155px;
+    left: 20px;
+}
+.profilepicture{
+    position: absolute;
+    width: 125.67px;
+    height: 115.67px;
+    left: 57.64px;
+    top: 30.34px;
+    background: white url();
+    border-radius: 50%;
+}
+.avatar-lg {
+    border-radius: 50%;
+    margin: -4% 0%;
+}
+.line1{
+    position: absolute;
+    width: 257px;
+    height: 0px;
+    left: 0px;
+    top: 180px;
+    border: 0.944853px solid #ffffff;
+}
+.line2{
+    position: absolute;
+    width: 257px;
+    height: 0px;
+    left: 0px;
+    top: 185px;
+    border: 0.944853px solid #FFFFFF;
+}
+.line3{
+    position: absolute;
+    width: 257px;
+    height: 0px;
+    left: 0px;
+    top: 520px;
+    border: 0.944853px solid #FFFFFF;
+}
+.line4{
+    position: absolute;
+    width: 257px;
+    height: 0px;
+    left: 0px;
+    top: 525px;
+    border: 0.944853px solid #FFFFFF;
+}
+.dashboard{
+    position: absolute;
+    width: 97.32px;
+    height: 25.51px;
+    left: 81.19px;
+    top: 35%;
+    color: white;
+}
+.dashboardimg{
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    color: #006494;   
+}
+
+.editprofile{
+    position: absolute;
+    width: 90.71px;
+    height: 25.51px;
+    left: 81.19px;
+    top: 40%;
+    color: white;
+}
+.editprofileimg{
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    background: #006494;
+}
+.addclass{
+    position: absolute;
+    width: 102px;
+    height: 25px;
+    left: 81.19px;
+    top:45%;
+    color: white;
+}
+.addclassimg{
+    position: absolute;
+    left: 20%;
+    top: 45%;
+    background: #006494;
+}
+.logout{
+    position: absolute;
+    width: 59.53px;
+    height: 25.51px;
+    left: 81.19px;
+    top: 50%;
+    color: white;
+}
+.logoutimg{
+    position: absolute;
+    left: 22%;
+    top: 50%;
+    
+    background: #006494;
+}
+.notifications{
+    position: absolute;
+    width: 110.55px;
+    height: 25.51px;
+    left: 81.19px;
+    top: 55%;
+    color: white;
+}
+.notificationsimg{
+    position: absolute;
+    left: 20%;
+    right: 95.92%;
+    top: 55%;
+    background: #006494;
+}
+.dry{
+    position: absolute;
+    width: 959px;
+    height: 763px;
+    left: 323px;
+    top: 113px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.hline{
+    position: absolute;
+    width: 959px;
+    height: 0px;
+    left: 0px;
+    top: 85px;
+    border: 1px solid #808080;
+}
+.coursename{
+    position: absolute;
+    width: 126px;
+    height: 27px;
+    left: 5%;
+    top: 20%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.drop{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 90%;
+    top: 27%;
+    background: #000000;
+}
+.dropbtn {
+    background-color: #ffffff;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #f1f1f1}
+  
+.drop:hover .dropdown-content {
+    display: block;
+}
+  
+.drop:hover .dropbtn {
+    background-color: #006494;
+}
+.coursenameplace{
+    position: absolute;
+    width: 875px;
+    height: 52px;
+    left: 5%;
+    top: 25%;
+    background: #FFFFFF;
+    border: 0.891553px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 3.56621px 8.91553px rgba(0, 0, 0, 0.25);
+}
+.classtitle{
+    position: absolute;
+    width: 94px;
+    height: 27px;
+    left: 5%;
+    top: 40%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+.classtitleplace{
+    position: absolute;
+    width: 875px;
+    height: 52px;
+    left: 5%;
+    top: 45%;
+    background: #FFFFFF;
+    border: 0.891553px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 3.56621px 8.91553px rgba(0, 0, 0, 0.25);
+}
+
+.level{
+    position: absolute;
+    width: 160px;
+    height: 27px;
+    left: 5%;
+    top: 60%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+.levelplace{
+    position: absolute;
+    width: 875px;
+    height: 52px;
+    left: 5%;
+    top: 65%;
+    
+    background: #FFFFFF;
+    border: 0.891553px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 3.56621px 8.91553px rgba(0, 0, 0, 0.25);    
+}
+.drop2{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 90%;
+    top: 67%;
+    float: right;
+}
+.dropbtn2 {
+    background-color: #ffffff;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} 
+.dropdown-content2 a:hover {background-color: #f1f1f1
+}
+.drop2:hover .dropdown-content2 {
+    display: block;
+}
+.drop2:hover .dropbtn2 {
+    background-color: #006494;
+}
+.addclassbtn{
+    position: absolute;
+    width: 120px;
+    height: 45px;
+    left: 5%;
+    top: 80%;
+    color: white;
+    font-family: Poppins;
+    font-weight: bold;
+    background: #006494;
+    box-shadow: 0px 3.199px 7.99751px rgba(0, 0, 0, 0.25);
+ 
+}
+.cancel{
+    position: absolute;
+    width: 120px;
+    height: 45px;
+    left: 20%;
+    top: 80%;
+    font-family: Poppins;
+    font-weight: bold;
+    background: #FFFFFF;
+    box-shadow: 0px 3.199px 7.99751px rgba(0, 0, 0, 0.25);
+}
+.navbarbottom{
+    position: absolute;
+    width: 1440px;
+    height: 53px;
+    bottom: 0px;
+    background: #FFFFFF;
+}
+.footer {
+    position: absolute;
+    width: 461px;
+    height: 27px;
+    left: 490px;
+    top: 987px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #808080;
+}
+
